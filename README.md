@@ -30,8 +30,8 @@ otpauth://totp/<username>? secret=<secret>&issuer=<indifferente>&algorithm=SHA25
 In order to try my software, I used an LDAP server (OUD) that I had previously set up for work reasons.
 Since the LDAP server I used was already configured, I didn't use the provided LDIF, but I set up a properties where you can indicate the LDAP Searchbase that you want to use. In this way the same application can be used on any LDAP tree.
 
-**To use the application follow the instruction below: **
-- Download the jar and the properties file that you can find in the out folder (the properties and the jar files must be in the same folder).
+**To use the application follow the instruction below:**
+- Download the jar and the properties files that you can find in the *out* folder (the properties and the jar files must be in the same folder).
 - Edit the *ldap.properties* file changing the parameters if necessary.
 - Double-click on the jar file.
 - Insert the credentials in the appropriate dialog box.
