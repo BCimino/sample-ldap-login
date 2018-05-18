@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="jar" name="Sample-ldap-login:jar">
-    <output-path>$PROJECT_DIR$/out/artifacts/Sample_ldap_login_jar</output-path>
-    <root id="archive" name="Sample-ldap-login.jar">
-      <element id="module-output" name="Sample-ldap-login" />
-    </root>
-  </artifact>
-</component>
