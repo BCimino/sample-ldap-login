@@ -57,7 +57,14 @@ public class LoginDialog extends JDialog {
 
         btnLogin.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                String loginResult = login.authenticate(getUsername(), getPassword());
+                String username = getUsername().trim();
+                String password = getPassword();
+                String loginResult = null;
+                if(username.isEmpty()){
+                    loginResult = "Invalid username. Try again.";
+                }else {
+                    loginResult = login.authenticate(username, password);
+                }
                 JOptionPane.showMessageDialog(LoginDialog.this,
                         loginResult,
                         "Login Result",
@@ -78,6 +85,8 @@ public class LoginDialog extends JDialog {
 
         getContentPane().add(panel, BorderLayout.CENTER);
         getContentPane().add(bp, BorderLayout.PAGE_END);
+
+        getRootPane().setDefaultButton(btnLogin);
 
         pack();
         setResizable(false);
